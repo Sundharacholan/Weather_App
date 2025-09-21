@@ -25,10 +25,10 @@ function Settings() {
         <div className="bg-[#1a2121] w-[100%] md:w-[45%] flex flex-col flex-grow py-7 px-4 rounded-lg shadow-md md:py-10">
           <h3 className="text-lg font-semibold mb-2">⚙️ Theme Toggle</h3>
           <button
-            className={`px-4 py-2 rounded transition font-semibold ${isDarkMode ? 'bg-[rgb(18,232,186)] text-[rgb(38,41,41)]' : 'bg-white text-black'}`}
+            className={`px-4 py-2 rounded transition font-semibold ${isDarkMode ? 'bg-[rgb(18,232,186)] text-[rgb(38,41,41)]' : 'bg-[rgb(18,232,186)] text-[rgb(38,41,41)]'}`}
             onClick={() => setIsDarkMode(!isDarkMode)}
-          >Mode
-            {isDarkMode ? 'Dark ' : 'Light Mode'}
+          >
+            {isDarkMode ? 'Dark Mode' : 'Dark Mode'}
           </button>
         </div>
 

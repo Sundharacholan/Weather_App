@@ -21,7 +21,7 @@ function HeroBanner(props) {
 
         {/* search-box */}
         <div className="w-full mt-8 mb-6 flex justify-between items-center rounded-full border border-gray-300/50 bg-black/30 backdrop-blur-sm  md:mt-12" style={{ border: "2px red" }}>
-          <div className="w-fit h-full flex items-center  px-6  py-3 ">
+          <div className="w-fit h-full flex items-center  px-6  py-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
@@ -35,7 +35,7 @@ function HeroBanner(props) {
                 }
               }}
               placeholder="Enter a city here"
-              className=" ml-4 placeholder-white/70 w-5/6 font-semibold text-lg bg-opacity-0 border-b-2  pb-1 text-center bg-[#5d8181] rounded-md  outline-none">
+              className=" ml-4 placeholder-white/70  w-5/6 font-semibold text-[16px] md:text-lg bg-opacity-0 border-b-2  pb-1 text-center bg-[#5d8181] rounded-md  outline-none">
 
             </input>
 
@@ -58,12 +58,12 @@ function HeroBanner(props) {
             </div>
           </div>
 
-          <div className="flex py-10 pb-10 justify-evenly gap-16">
+          <div className="flex py-10 pb-10 px-7 justify-evenly gap-16">
             <div className="flex flex-col items-center justify-center " >
               <h1 className=" w-fit h-fit text-2xl font-bold">
                 {temp !== null ? ` ${temp}°C ` : "--"}
               </h1>
-              <p className="pt-3 text-xl">Sky: {clouds}</p>
+              <p className="pt-3 text-base">Sky: {clouds}</p>
               {error && <p className="text-sm text-red-500 mt-2 font-bold bg-red-100/40 py-1 px-2 rounded-md border-t-2 border-t-red-500">{error}</p>}
             </div>
             <img className="w-24 ml-7 pl-5" src={weatherImg} alt="" />
